@@ -1,0 +1,29 @@
+{
+  "name": "ai-graph-connection-reroute-plugin",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/connection-reroute-plugin.common.js",
+  "module": "build/connection-reroute-plugin.esm.js",
+  "scripts": {
+    "build": "rete --build graph.config.js",
+    "build:dev": "rete --build graph.config.js --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Viktor Furdakov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ViktorFurdakov/connection-reroute-plugin.git"
+  },
+  "dependencies": {
+    "d3-shape": "^1.3.5",
+    "vue": "2.6.10"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "pug": "^2.0.3",
+    "rete-cli": "^0.6.0",
+    "rollup-plugin-vue": "4.7.2",
+    "vue-template-compiler": "2.6.10"
+  }
+}
